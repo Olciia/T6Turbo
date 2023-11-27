@@ -1,0 +1,214 @@
+/* Resetowanie stylów */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Rozmiar czcionki dla HTML */
+html {
+  font-size: 62.5%;
+}
+
+/* Domyślna czcionka dla wszystkich elementów, z wyjątkiem <i> */
+*:not(i) {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Styl dla nagłówka */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 2.2rem 5rem; /* Zmniejszono padding */
+  opacity: 1;
+}
+
+/* Styl dla nawigacji */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styl dla listy w nawigacji */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+/* Styl dla linków w nawigacji */
+nav a {
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+/* Styl dla logo */
+nav a#logo {
+  color: #000000;
+  font-weight: 700;
+}
+
+/* Styl dla linków w liście */
+nav ul a {
+  color: #000000;
+  font-weight: 600;
+}
+
+/* Styl dla linków w liście po najechaniu myszką */
+nav ul a:hover {
+  font-size: 20px;
+  text-shadow: 0px 0px 7px rgb(114, 105, 105), 0px 0px 7px rgb(161, 154, 154), 0px 0px 7px #fff;
+}
+#t6{
+  color: red;
+  font-family: cool school;
+  text-decoration: none;
+}
+#logo{
+  font-family: cool school;
+}
+/* Styl dla sekcji o id "home" */
+section#home {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+/* Styl dla nagłówka H1 */
+h1 {
+  font-size: 4rem;
+}
+
+/* Styl dla ikony "fas fa-bars" */
+#ham-menu {
+  display: none;
+}
+
+/* Styl dla aktywnej nawigacji na mniejszych ekranach */
+nav ul.active {
+  left: 0;
+}
+
+/* Media queries dla różnych szerokości ekranu */
+
+@media only screen and (max-width: 991px) {
+  html {
+    font-size: 56.25%;
+  }
+  header {
+    padding: 2.2rem 5rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
+  #ham-menu {
+    display: block;
+    color: #000000;
+  }
+  nav a#logo,
+  #ham-menu {
+    font-size: 3.2rem;
+  }
+  nav ul {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    left: -100vw;
+    top: 73.6px;
+    width: 100vw;
+    height: calc(100vh - 73.6px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: 1s;
+    gap: 0;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+}
+
+@media only screen and (max-width: 575px) {
+  html {
+    font-size: 46.87%;
+  }
+  header {
+    padding: 2rem 3rem;
+  }
+  nav ul {
+    top: 65.18px;
+    height: calc(100vh - 65.18px);
+  }
+}
+
+/* Klasa "kal" */
+.kal {
+  display: grid;
+  place-items: center;
+}
+/* Dodaj te style do swojego pliku style.css */
+
+.contener--home {
+  background-color: gray;
+  background-size: cover; /* Rozciągnij tło, aby wypełnić cały element */
+  background-position: center top; /* Wyśrodkuj tło poziomo i ustaw na górze */
+  height: 100vh; /* Ustaw wysokość na 100% wysokości widoku */
+}
+.contener--kontakt{ 
+    background-color: rgb(255, 0, 0);
+    background-size: cover; /* Rozciągnij tło, aby wypełnić cały element */
+    background-position: center top; /* Wyśrodkuj tło poziomo i ustaw na górze */
+    height: 100vh; /* Ustaw wysokość na 100% wysokości widoku */
+  }
+
+
+/* Styl dla .contener--home */
+.contener--home {
+  background-color: gray;
+  background-image: url('t6turbo_tlo.jpg');
+  background-size: cover;
+  background-position: center top;
+  display: flex; /* Użyj flexboxa, aby wyśrodkować zawartość */
+  flex-direction: column; /* Ustaw kierunek flexboxa na kolumnę */
+  justify-content: center; /* Wyśrodkuj zawartość w pionie */
+  align-items: center; /* Wyśrodkuj zawartość w poziomie */
+  height: 100vh;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Styl dla .contener--kontakt */
+.contener--kontakt {
+  background-color: rgb(37, 37, 37);
+  background-image: url('t6turbo_2_tlo.jpg');
+  background-size: cover;
+  background-position: center top;
+  display: flex; /* Użyj flexboxa, aby wyśrodkować zawartość */
+  flex-direction: column; /* Ustaw kierunek flexboxa na kolumnę */
+  justify-content: center; /* Wyśrodkuj zawartość w pionie */
+  align-items: center; /* Wyśrodkuj zawartość w poziomie */
+  height: 100vh;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.contener--kontakt, .contener--home p{
+  font-size: 2.3rem;
+}
+p{
+  font-size: 4rem;
+}
+h1{
+  font-size: 7rem;
+}
+#telefon{
+  color: white;
+}
